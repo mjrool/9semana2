@@ -1,11 +1,49 @@
+h2{
+	font-size: 1.5em;
+}
+
 #row1{
 
-	background-color: red;
-	height: 700px;
-
+	background-color: ;
+	height: 200px;
 }
 
 #row2{
 
-	background-color: yellow;
+	background-color: ;
+	height: 200px;
 }
+
+#tabla{
+
+	height: 250px;
+	width: 500px;
+	border: solid;
+	padding: 30px;
+	margin: 40px;
+}
+
+.valores{
+	height: 300px;
+	width: 500px;
+	border: solid;
+	padding: 30px;
+	margin: 40px;
+}
+
+input{
+	margin: 10px;
+	width: 200px;
+}
+
+#select{
+	width: 180px;
+}
+
+#coliz{
+	background-color: blue;
+	height: 70px;
+}
+
+
+

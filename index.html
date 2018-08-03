@@ -3,34 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Font awesome 5.1.0  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- Google Font Rubik  -->
+<link href="https://fonts.googleapis.com/css?family=Roboto|Sunflower:300" rel="stylesheet">
+	<!-- Main style  -->
+<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 	<script src="assets/js/script.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 
-<div class="row" id="row1">
-		<section class="primero col-md-4 " >
-			<input type="" name=""></input>
-			<select class="form-control" id="select">
-			     <option>Seleccione una unidad de conversión:</option>
-			      <option value="pesos">Pesos Chilenos</option>
-			      <option value="dolar">Dólar</option>
-			      
-   			 </select>
-		</section>
-</div>		
-<div class="row" id="row2">	
-		<section class="segundo col-md-8 " >
-			<input type="" name=""></input>
-			<select class="form-control" id="select">
-			     <option>Seleccione una unidad de conversión:</option>
-			      <option value="pesos">Pesos Chilenos</option>
-			      <option value="dolar">Dólar</option>
-			      <option value="Euro">Euro</option>
-			      <option value="UF">UF</option>
-			      <option value="UTM">UTM</option>
-   			 </select>
+<div class="row" >
+	<section class="primero col-md-6 " id="row1">
+
+		<div class="row" id="tabla"	>
+			<div "id="coliz" col-md-4">
+				<input type="number" name="cantidad" class="form" id="cantidad"></input>
+				<input type="number" name="resultado" class="form-response" id="resultado"></input>
+				
+   			</div>
+			
+			<div "id="colder" col-md-4">
+			
+				<select class="form-control" id="select" >
+				     <option>Seleccione una unidad de conversión:</option>
+				      <option value="pesos">Pesos Chilenos</option>
+				      <option value="dolar">Dólar</option>
+				      <option value="Euro">Euro</option>
+				      <option value="UF">UF</option>
+				      <option value="UTM">UTM</option>
+	   			</select>
+	   			<select class="form-control" id="select" >
+				     <option>Seleccione una unidad a convertir:</option>
+				      <option value="pesos">Pesos Chilenos</option>
+				      <option value="dolar">Dólar</option>
+	   			 </select>
+
+   			</div>
+		</div>
+
+	</section>
+
+	<section class="segundo col-md-6 "  id="row2">
+   		<div class="valores">
+   			<h2>INDICADORES ECONÓMICOS</h2>
+   			
+   			<p>UF: </p><br>
+   			<p>UTM: </p><br>
+   			<p>DÓLAR: </p><br>
+   			<p>EURO: </p><br>
+
+   		</div>	 
 			
 		</section>
-</div>
+
+</div>	
 
 	
 </body>
