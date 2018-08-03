@@ -23,11 +23,23 @@ $(function(){
 	})
 
 
+
+
 	$('#conversion-to-clp').submit(function(e) {
 		e.prevetDefault();
+		if (indicadores == null) {
+			alert('espera');
+			return;
+		}
+
+
+
 		let amount = $(this).find('.amount').val();
-		let result = indicadores.dolar.valor * amount;
+		let divisa = $(this).find('.tipo_conversion').val();
+		let result = indicadores[divisa]valor * amount;
+		let unidad_medida = indicadores[divisa].unidad_medida;
 		$(this).find('card__result .valor').text(result.toFixed(2));
+		$(this).find('card__result .tipo_cambio').text(unidad_medida);
 	})
 
 })
